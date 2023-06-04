@@ -1,11 +1,13 @@
 function sucess()
         {
-            swal({
-                title: "Good Job!",
-                text: "You have successfully Registered",
-                icon: "success",
-            });
-            return true
+           setTimeout(function() {
+                    swal({
+                      title: "Good Job!",
+                      text: "You have successfully Registered",
+                      icon: "success",
+                    });
+           }, 11000); // Delay of 10 seconds (10000 milliseconds)
+           return true;
         }
         function validate()
         {
