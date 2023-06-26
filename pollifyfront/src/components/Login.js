@@ -16,7 +16,7 @@ export default function Login()
 
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/api/auth/login', login)
+        axios.post('https://pollify-backend.onrender.com/api/auth/login', login)
         .then( res => { 
             localStorage.setItem('token', res.data.token); 
             navigate('/') 
