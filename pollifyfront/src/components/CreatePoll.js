@@ -39,7 +39,7 @@ export default function CreatePoll()
         // });
         console.log(polldata)
 
-        axios.post(`http://localhost:5000/api/auth/createpoll`, polldata)
+        axios.post(`https://pollify-backend.onrender.com/createpoll`, polldata)
         .then( res => {
             // alert(res.data);
             swal({
